@@ -1,0 +1,81 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Cine";
+}
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2%; /* Espacio entre las imágenes */
+    }
+
+        .image-container img {
+            width: 100%;
+            height: 80%; /* Todas las imágenes tendrán la misma altura */
+            object-fit: cover; /* Mantiene la proporción de aspecto */
+            box-sizing: border-box;
+        }
+
+        .image-container .image-caption {
+            text-align: center;
+            margin-top: 5px; /* Espacio entre la imagen y el texto */
+        }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNYES0PVdzThARr_FHRleBSoXixxo0W_nBiN_gPRTMg&s" class="img-fluid" alt="...">
+    
+    <div class="image-container">
+        <div>
+            <img src="https://i.pinimg.com/736x/11/07/8d/11078dbbb31531170145ac8263cd4b23.jpg" alt="Imagen 1">
+            <button type="button" class="btn btn-primary">Estreno</button>
+            <div class="image-caption">Pelicula 1</div>
+        </div>
+        <div>
+            <img src="https://pbs.twimg.com/media/FYzFkahXkAEZhaR.jpg" alt="Imagen 2">
+            <button type="button" class="btn btn-primary">Preventa</button>
+            <div class="image-caption">Pelicula 2</div>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwkWsOc9lwHOtLPnHFWymyrKlpJVB7jZ4JoPsL-nHVUN3zBpBMzIkWwiNlER01SEDCwg&usqp=CAU" alt="Imagen 3">
+            <button type="button" class="btn btn-primary">Estreno</button>
+            <div class="image-caption">Pelicula 3</div>
+        </div>
+        <div>
+            <img src="https://www.ecartelera.com/carteles/8900/8901/035_m.jpg" alt="Imagen 4">
+            <button type="button" class="btn btn-primary">Estreno</button>
+            <div class="image-caption">Pelicula 4</div>
+        </div>
+        <div>
+            <img src="https://cl.buscafs.com/www.tomatazos.com/public/uploads/images/170636/170636.jpg" alt="Imagen 5">
+            <button type="button" class="btn btn-primary">Preventa</button>
+            <div class="image-caption">Pelicula 5</div>
+        </div>
+        <div>
+            <img src="https://images7.memedroid.com/images/UPLOADED550/636870c33af15.jpeg" alt="Imagen 6">
+            <button type="button" class="btn btn-primary">Estreno</button>
+            <div class="image-caption">Pelicula 6</div>
+        </div>
+        <div>
+            <img src="https://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/31845.jpg" alt="Imagen 7">
+            <button type="button" class="btn btn-primary">Estreno</button>
+            <div class="image-caption">Pelicula 7</div>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSweY6uMTtYjpXEm-UZKzTtvafUoU05-H3tKA&usqp=CAU" alt="Imagen 8">
+            <button type="button" class="btn btn-primary">Estreno</button>
+            <div class="image-caption">Pelicula 8</div>
+        </div>
+    </div>
+</div>
+
+
